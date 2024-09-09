@@ -1,0 +1,253 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    direction: rtl;
+}
+.title
+{
+    display: grid;
+    justify-content: center;
+}
+h1
+{
+    background-color: silver;
+    padding: 10px;
+    border-radius: 5px;
+}
+.container
+{
+    padding: 20px 30px;
+        background: #CED0CD;
+            line-height: 2;
+            margin-top: -1.5rem;
+             min-height: 1170px;
+            box-shadow: 0 5px 9px #80808070;
+            border-radius: 90px;
+}
+.text-responsiv
+{
+    display: block;
+    font-weight: 800;
+}
+.text
+{
+    display: none;
+    /* padding-right:2rem ;
+    font-size: 1.5rem; */
+}
+@media screen and (min-width:1170px) 
+{
+    .text
+    {
+        display: block;
+        /* /* padding-right:2rem ; */
+        margin-right: 2rem; 
+        font-size: 1.4rem;
+        text-align: center;
+    }   
+    .text-responsiv
+    {
+        display: none;
+    }
+}
+@media screen and (max-width:500px) 
+{
+    .text
+    {
+        display: none;
+    }
+    .text-responsiv
+    {
+        display: block;
+        text-align: justify;
+        font-size: 1.1rem;
+    }
+    #p3
+    {
+        margin-top: 1rem;
+    }
+}
+.show-case
+{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.middle
+{
+    display: flex;
+    /* grid-template-columns: repeat(2,1fr); */
+    align-items: center;
+    justify-content: flex-start
+}
+.middle-logo
+{
+    display: grid;
+    /* justify-self: end; */
+    margin-left: 6rem;
+}
+.middle-text
+{
+    font-size: 1.4rem;
+    justify-self: center;
+}
+@media screen and (max-width:660px) 
+{
+    .show-case
+    {
+        max-width: 500px;
+    }
+    .middle-text 
+    {
+        width: 80%;
+    }
+    .middle-text li
+    {
+      font-size: 1rem;
+      font-weight: bolder;
+      line-height: 1.3;
+      margin-top: 1rem;
+      
+    }
+    .middle
+    {
+        display: flex;
+    }
+    .middle-logo 
+    {
+        width: 10%;
+    }
+    .middle-logo img
+    {
+        width: 150px;
+        height: 150px;
+    }
+}
+.bg-red
+{
+    color: red;
+}
+.matn
+{
+    display: none;
+}
+.matn-responsive
+{
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+}
+@media screen and (min-width:900) and (max-width:1050px)
+{
+    .matn-responsive
+    {
+        display: none;
+    }
+    .text-systeam
+    {
+        margin-top: 4rem;
+    }
+    .matn
+    {
+        display: block;
+        margin: 1rem 2rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+}
+@media screen and (min-width:1130px) 
+{
+    .matn-responsive
+    {
+        display: none;
+    }   
+    .matn
+    {
+        display: block;
+        font-size: 1.3rem;
+        margin: 2rem 3rem;
+        text-align: center;
+    }
+}
+@media screen and (max-width:660px)
+{
+    .text-systeam
+    {
+        max-width: 660px;
+    }
+    .matn-responsive
+    {
+        font-size: 1.2rem;
+    }
+}
+/* ///////////////////////////////////////////////////////////////////////////// */
+.note
+{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+.note-responsive
+{
+    display: none;
+}
+@media screen and (max-width:660px) 
+{
+      .note-responsive
+      {
+        display: block;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-top: 4rem;
+
+      }
+      .note
+      {
+        display: none;
+      }
+}
+@media screen and (min-width:661px) and (max-width:880px) 
+{
+    .note-responsive
+    {
+      display: block;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-top: 4rem;
+
+    }
+    .note
+    {
+      display: none;
+    }
+}
+/* //////////////////////////////////////////////////// */
+h2
+{
+    display: inline-block;
+    background-color: silver;
+    border-radius: 10px;
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
+    margin-top: 5rem;
+    margin-right: 3rem;
+    padding: 2px;
+    border: 2px solid black;
+}
+.img
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+#photo img
+{
+    rotate: 90deg;
+}
+#photo a
+{
+    rotate: 90deg;
+}
+
